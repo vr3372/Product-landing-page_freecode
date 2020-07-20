@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* the nav bar & logo */
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 30px 60px 30px 20px;
+  position: sticky;
+  top: 0;
+}
+
+#nav-bar {
+  margin: auto 0;
+  font-family: "Montserrat", sans-serif;
+}
+.nav-link {
+  text-decoration: none;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+.nav-link:hover {
+  color: #bbe1fa;
+}
+
+.name {
+  display: inline-block;
+  color: rgb(10, 118, 161);
+  margin: auto auto;
+  padding-left: 5px;
+}
+.name > span {
+  font-style: italic;
+}
+
+/*  main div holding the video & h3 */
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 100px 0 100px;
+}
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+}
+
+h4,
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+#video {
+  box-shadow: 0 0 4px 2px darkgrey;
+  border-radius: 5px;
+}
+.data {
+  height: 100px;
+  padding-top: 80px;
+  margin-right: 80px;
+  text-align: center;
+}
+.databtn {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  padding: 10px 40px;
+  border: none;
+  outline-color: #3282b8;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #3282b8;
+  box-shadow: 0 0 4px 2px darkgrey;
+  color: #fff;
+  font-size: 1rem;
+}
+.databtn:hover {
+  background-color: #bbe1fa;
+  color: #000;
+}
+
+/* product section */
+
+#product {
+  text-align: center;
+  padding: 120px 0;
+}
+
+.prodhead {
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.img {
+  border-radius: 20px;
+}
+
+/* form data section */
+.formdata {
+  background-color: #3282b8;
+  padding: 100px 0;
+}
+#form {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+
+#email {
+  border: none;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-radius: 5px;
+  width: 50%;
+}
+
+legend {
+  color: #fff;
+  padding: 0 10px;
+}
+
+.field {
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#submit {
+  font-family: "Montserrat", sans-serif;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  background-color: #0f4c75;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #fff;
+  box-shadow: 0 0 4px 1px darkgrey;
+  text-align: center;
+}
+
+/* the facebook, instagram icon */
+#end {
+  background-color: #bbe1fa;
+  text-align: center;
+  padding: 70px 0 5px;
+}
+.fab {
+  padding: 0 20px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 376px) {
+  #header {
+    display: block;
+    background-color: #000;
+    padding: 10px 0 10px 10px;
+  }
+  #nav-bar {
+    margin: 0;
+    padding: 20px 0 0 0;
+  }
+  .nav-link {
+    padding: 0 10px 0 0;
+    font-size: 0.9rem;
+  }
+  .main {
+    display: block;
+    margin: 50px 0 50px;
+    text-align: center;
+  }
+  #video {
+    border-radius: 2px;
+    width: 300px;
+    height: 150px;
+  }
+  .data {
+    height: 100px;
+    padding-top: 80px;
+    margin: 0;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h3,
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+    padding-top: 40px;
+  }
+  #product {
+    padding: 120px 0;
+  }
+
+  .prodhead {
+    padding-bottom: 20px;
+  }
+
+  .img {
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+  }
+  .formdata {
+    padding: 180px 0 100px;
+  }
+  #form {
+    width: 60%;
+  }
+  #submit {
+    font-size: 0.9rem;
+  }
+  #end {
+    padding: 30px 0 5px;
+  }
+}
